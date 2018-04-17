@@ -38,11 +38,9 @@ return 0;
 
 
 
-output
+Output
+
+slice(2,3,4): 2 6 10
 
 
-Result using accumulate: 31
 
-Result using accumulate with user-defined function: 750
-
-Result using accumulate with pre-defined function: -29
