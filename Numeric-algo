@@ -20,3 +20,35 @@ int main()
     cout << accumulate(a, a+3, sum, std::minus<int>());
 
      return 0;     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+output
+
+Result using accumulate: 31
+
+Result using accumulate with user-defined function: 750
+
+Result using accumulate with pre-defined function: -29
+
+
+
+
+
+
+
+
+
