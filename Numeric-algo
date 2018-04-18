@@ -1,12 +1,13 @@
 #include<iostream>
 #include <numeric>    
 using namespace std;
-int myfun(int x, int y){
-   return x * y ;   }
+
 int main()
-{  int sum = 1;
+{ 
+   
+   int sum = 1;
    int a[] = {5 , 10 , 15} ;
-    cout << "\nResult using accumulate: ";
+   cout << "\nResult using accumulate: ";
 
     cout << accumulate(a , a+3 , sum);
 
@@ -14,7 +15,10 @@ int main()
 
     cout << accumulate(a, a+3, sum, std::minus<int>());
 
-     return 0;     }
+     return 0; 
+     
+     
+     }
 
 
 
