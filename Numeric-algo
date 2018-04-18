@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include <numeric>    
 using namespace std;
@@ -11,11 +10,7 @@ int main()
 
     cout << accumulate(a , a+3 , sum);
 
-    cout << "\nResult using accumulate with user-defined function: ";
-
-    cout << accumulate(a, a+3, sum, myfun);
-
-      cout << "\nResult using accumulate with pre-defined function: ";
+    cout << "\nResult using accumulate with pre-defined function: ";
 
     cout << accumulate(a, a+3, sum, std::minus<int>());
 
@@ -29,18 +24,9 @@ int main()
 
 
 
-
-
-
-
-
-
-
 output
 
 Result using accumulate: 31
-
-Result using accumulate with user-defined function: 750
 
 Result using accumulate with pre-defined function: -29
 
