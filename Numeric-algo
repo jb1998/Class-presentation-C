@@ -42,3 +42,13 @@ Result using accumulate with pre-defined function: -29
 
 
 
+
+
+
+std::size_t can store the maximum size of a theoretically possible object of any type (including array).
+On many platforms (an exception are systems with segmented addressing) std::size_t can safely store the 
+value of any non-member pointer, in which case it is synonymous with std::uintptr_t.
+
+std::size_t is commonly used for array indexing and loop counting.
+Programs that use other types, such as unsigned int, for array indexing may fail on,
+e.g. 64-bit systems when the index exceeds UINT_MAX or if it relies on 32-bit modular arithmetic.
